@@ -367,11 +367,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MRJActionSheet/MRJActionSheet.framework",
 				"${BUILT_PRODUCTS_DIR}/MRJCameraTool/MRJCameraTool.framework",
+				"${BUILT_PRODUCTS_DIR}/SKFCamera/SKFCamera.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJActionSheet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJCameraTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKFCamera.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

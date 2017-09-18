@@ -9,23 +9,22 @@
 #import "MRJCameraTool.h"
 #import "TZImagePickerController.h"
 #import "SKFCamera.h"
-#import "KKActionSheet.h"
+#import "MRJActionSheet.h"
+#import "UIColor+Additions.h"
 
 ///返回图片的最大分辨率宽度
 #define  NEWPIC_WIDTH                         640.0
 
-@interface MRJCameraTool ()<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, TZImagePickerControllerDelegate, KKActionSheetDelegate>
+@interface MRJCameraTool ()<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, TZImagePickerControllerDelegate, MRJActionSheetDelegate>
 @property (nonatomic, strong) NSMutableArray *selectImage;
 @end
 
 @implementation MRJCameraTool
 
+///占用一个像素的主屏幕位置
+/// 确保委托方法的顺利执行
 +(id)cameraToolDefault{
-    /*****
-     占用一个像素的主屏幕位置
-     确保委托方法的顺利执行
-     */
-    CameraTool *camTool = [[CameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
+    MRJCameraTool *camTool = [[MRJCameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
     camTool.backgroundColor = [UIColor clearColor];
     camTool.width = NEWPIC_WIDTH;
     camTool.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
@@ -33,18 +32,20 @@
 }
 
 + (void)cameraAtView:(UIViewController *)myVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success{
-    CameraTool *camTool = [self cameraToolDefault];
+    MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.isEdit = isEdit;
     camTool.vc = myVC;
     camTool.type = CameraToolDefault;
     [camTool showActionSheet];
     [myVC.view addSubview:camTool];
     
-    __weak CameraTool *cam = camTool;
+    __weak MRJCameraTool *cam = camTool;
     camTool.CompleteChooseCallback = ^(UIImage *image){
         [cam removeFromSuperview];
         if (image) {
-            SAFE_BLOCK_CALL(success, image);
+            if (success) {
+                success(image);
+            }
         }
     };
 }
@@ -57,7 +58,7 @@
     if (maxNum <= 0) {
         return;
     }
-    CameraTool *camTool = [self cameraToolDefault];
+    MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.vc = myVC;
     camTool.type = CameraToolCustomize;
     camTool.maxNum = maxNum;
@@ -78,10 +79,12 @@
             break;
     }
     
-    __weak CameraTool *cam = camTool;
+    __weak MRJCameraTool *cam = camTool;
     camTool.photosCompleteChooseCallback = ^(NSArray *images){
         if (images) {
-            SAFE_BLOCK_CALL(success, images);
+            if (success) {
+                success(images);
+            }
         }
         [cam removeFromSuperview];
     };
@@ -89,21 +92,17 @@
 
 
 + (void)cameraDisableAlert{
-    UIAlertView *atView = [[UIAlertView alloc]initWithTitle:@"Unable to open the camera".local_basic message:@"In Settings - > general - > disable access to camera limit access restrictions".local_basic delegate:nil cancelButtonTitle:@"Got it".local_basic otherButtonTitles:nil, nil];
+    UIAlertView *atView = [[UIAlertView alloc]initWithTitle:@"不能打开相机" message:@"设置 - > 隐私 - > 相机" delegate:nil cancelButtonTitle:@"Got it" otherButtonTitles:nil, nil];
     [atView show];
 }
 
 -(void)showActionSheet{
-    KKActionSheet *choiceSheet =[[KKActionSheet alloc] initWithTitle:nil
-                                                          titleColor:[UIColor colorWithHexString:@"333333"]
-                                                        buttonTitles:@[@"Photograph".local_basic, @"Select from the album".local_basic]
-                                                      redButtonIndex:-1 defColor:@[@3,@4] delegate:self];
+    MRJActionSheet *choiceSheet = [[MRJActionSheet alloc] initWithTitle:nil buttonTitles:@[@"拍照", @"相册"] redButtonIndex:-1 defColor:nil delegate:self];
     [choiceSheet show];
-    //    [choiceSheet showInView:self.vc.view];
 }
 
 #pragma mark UIActionSheetDelegate
-- (void)actionSheet:(KKActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex{
+- (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex{
     
     if (buttonIndex == 2) return;
     
@@ -163,7 +162,7 @@
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         [self.vc presentViewController:picker animated:YES completion:nil];
     } else {
-        [CameraTool cameraDisableAlert];
+        [MRJCameraTool cameraDisableAlert];
     }
 }
 
@@ -171,12 +170,12 @@
     // 跳相册
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:self.maxNum delegate:self];
     imagePickerVc.photoWidth=self.width;
-    imagePickerVc.barItemTextColor=[UIColor KK_MainColor];
-    imagePickerVc.naviBgColor=[UIColor whiteColor];
-    imagePickerVc.naviTitleColor=[UIColor KK_Gray33];
-    imagePickerVc.allowPickingVideo=NO;
+    imagePickerVc.barItemTextColor = [UIColor colorWithHexString:@"0091e8"];
+    imagePickerVc.naviBgColor = [UIColor whiteColor];
+    imagePickerVc.naviTitleColor = [UIColor colorWithHexString:@"333333"];
+    imagePickerVc.allowPickingVideo = NO;
     imagePickerVc.allowPickingGif = YES;
-    imagePickerVc.oKButtonTitleColorNormal=[UIColor KK_MainColor];
+    imagePickerVc.oKButtonTitleColorNormal = [UIColor colorWithHexString:@"0091e8"];
     [self.vc presentViewController:imagePickerVc animated:YES completion:nil];
 }
 

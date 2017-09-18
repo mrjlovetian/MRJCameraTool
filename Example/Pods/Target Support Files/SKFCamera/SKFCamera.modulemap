@@ -1,0 +1,6 @@
+framework module SKFCamera {
+  umbrella header "SKFCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}

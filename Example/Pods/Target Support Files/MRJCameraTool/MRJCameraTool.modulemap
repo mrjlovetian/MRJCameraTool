@@ -1,0 +1,6 @@
+framework module MRJCameraTool {
+  umbrella header "MRJCameraTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

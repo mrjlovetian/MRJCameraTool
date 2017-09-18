@@ -1,0 +1,6 @@
+framework module Pods_MRJCameraTool_Tests {
+  umbrella header "Pods-MRJCameraTool_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
