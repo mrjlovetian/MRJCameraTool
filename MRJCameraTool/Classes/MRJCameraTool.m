@@ -16,7 +16,7 @@
 #define  NEWPIC_WIDTH                         640.0
 
 @interface MRJCameraTool ()<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, TZImagePickerControllerDelegate, MRJActionSheetDelegate>
-@property (nonatomic, strong) NSMutableArray *selectImage;
+@property (nonatomic, strong)NSMutableArray *selectImage;
 @end
 
 @implementation MRJCameraTool
@@ -31,13 +31,13 @@
     return camTool;
 }
 
-+ (void)cameraAtView:(UIViewController *)myVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success{
++ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success{
     MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.isEdit = isEdit;
-    camTool.vc = myVC;
+    camTool.vc = curreVC;
     camTool.type = CameraToolDefault;
     [camTool showActionSheet];
-    [myVC.view addSubview:camTool];
+    [curreVC.view addSubview:camTool];
     
     __weak MRJCameraTool *cam = camTool;
     camTool.CompleteChooseCallback = ^(UIImage *image){
@@ -50,20 +50,20 @@
     };
 }
 
-+ (void)cameraAtView:(UIViewController *)myVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;{
-    [self cameraAtView:myVC sourceType:UIImagePickerControllerSourceTypePhotoLibrary imageWidth:width maxNum:maxNum success:success];
++ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;{
+    [self cameraAtView:curreVC sourceType:UIImagePickerControllerSourceTypePhotoLibrary imageWidth:width maxNum:maxNum success:success];
 }
 
-+ (void)cameraAtView:(UIViewController *)myVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success{
++ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success{
     if (maxNum <= 0) {
         return;
     }
     MRJCameraTool *camTool = [self cameraToolDefault];
-    camTool.vc = myVC;
+    camTool.vc = curreVC;
     camTool.type = CameraToolCustomize;
     camTool.maxNum = maxNum;
     camTool.width = width;
-    [myVC.view addSubview:camTool];
+    [curreVC.view addSubview:camTool];
     
     switch (type) {
         case UIImagePickerControllerSourceTypePhotoLibrary:
@@ -129,7 +129,6 @@
                                 myself.photosCompleteChooseCallback(@[newImage]);
                             }
                         }
-                        
                     }
                 } ;
                 [self.vc presentViewController:homec animated:NO completion:^{}];
@@ -153,9 +152,9 @@
     }
 }
 
+/// 跳相机
 - (void)goCamera{
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        // 跳相机
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.allowsEditing = NO;
         picker.delegate = self;
@@ -166,8 +165,8 @@
     }
 }
 
+/// 跳相册
 - (void)goPhotosPicker{
-    // 跳相册
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:self.maxNum delegate:self];
     imagePickerVc.photoWidth=self.width;
     imagePickerVc.barItemTextColor = [UIColor colorWithHexString:@"0091e8"];
@@ -179,7 +178,6 @@
     [self.vc presentViewController:imagePickerVc animated:YES completion:nil];
 }
 
-
 #pragma mark - KKAssetPickerController Delegate
 
 - (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto{
@@ -188,8 +186,6 @@
 
 - (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingGifImage:(UIImage *)animatedImage sourceAssets:(id)asset{
     self.photosCompleteChooseCallback(@[animatedImage]);
-    
-    //    NSMutableArray *emptyImages = []
 }
 
 #pragma mark - UIImagePickerControllerDelegate
@@ -211,7 +207,6 @@
                     self.photosCompleteChooseCallback(@[newImage]);
                 }
             }
-            
             [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
         }];
     }

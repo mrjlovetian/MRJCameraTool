@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef enum CameraToolType
 {
     CameraToolDefault = 0, // 系统相册
@@ -32,7 +33,7 @@ typedef enum CameraToolType
  *@param isEdit 是否编辑
  *@param success 返回image对象
  */
-+ (void)cameraAtView:(UIViewController *)myVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success;
++ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success;
 
 /*自定义选择图片封装
  *@param myVc
@@ -40,7 +41,7 @@ typedef enum CameraToolType
  *@param maxNum 最多可以选择多少张
  *@param success 返回image数组对象
  */
-+ (void)cameraAtView:(UIViewController *)myVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
++ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
 
 /*自定义选择图片封装
  *@param myVc
@@ -50,5 +51,5 @@ typedef enum CameraToolType
  *@param success 返回image数组对象
  */
 
-+ (void)cameraAtView:(UIViewController *)myVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
++ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
 @end
