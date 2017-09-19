@@ -16,8 +16,8 @@ typedef enum CameraToolType
 } CameraToolType;
 
 @interface MRJCameraTool : UIView
-@property (nonatomic, assign) UIImagePickerControllerSourceType sourceType;
-@property (nonatomic, assign) BOOL isEdit;
+@property (nonatomic, assign) UIImagePickerControllerSourceType sourceType;///
+@property (nonatomic, assign) BOOL isEdit;///编辑设置
 @property (nonatomic, assign) CGFloat width;
 @property (nonatomic, assign) CameraToolType type;
 @property (nonatomic, assign) NSInteger maxNum;
@@ -50,6 +50,5 @@ typedef enum CameraToolType
  *@param maxNum 最多可以选择多少张
  *@param success 返回image数组对象
  */
-
 + (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
 @end

@@ -50,7 +50,7 @@
     };
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;{
++ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success{
     [self cameraAtView:curreVC sourceType:UIImagePickerControllerSourceTypePhotoLibrary imageWidth:width maxNum:maxNum success:success];
 }
 
@@ -90,9 +90,8 @@
     };
 }
 
-
 + (void)cameraDisableAlert{
-    UIAlertView *atView = [[UIAlertView alloc]initWithTitle:@"不能打开相机" message:@"设置 - > 隐私 - > 相机" delegate:nil cancelButtonTitle:@"Got it" otherButtonTitles:nil, nil];
+    UIAlertView *atView = [[UIAlertView alloc]initWithTitle:@"不能打开相机" message:@"设置 - > 隐私 - > 相机" delegate:nil cancelButtonTitle:@"去设置" otherButtonTitles:nil, nil];
     [atView show];
 }
 
@@ -230,7 +229,6 @@
         image  = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
-    
     return image;
 }
 
