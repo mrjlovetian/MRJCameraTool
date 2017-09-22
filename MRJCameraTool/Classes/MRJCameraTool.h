@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum CameraToolType
-{
+typedef enum CameraToolType{
     CameraToolDefault = 0, // 系统相册
     CameraToolCustomize,   // 自定义
-    
 } CameraToolType;
+
+typedef void (^CompleteChooseCallback)(UIImage *image);
+typedef void (^PhotosCompleteChooseCallback)(NSArray *images);
 
 @interface MRJCameraTool : UIView
 @property (nonatomic, assign) UIImagePickerControllerSourceType sourceType;///
@@ -22,10 +23,11 @@ typedef enum CameraToolType
 @property (nonatomic, assign) CameraToolType type;
 @property (nonatomic, assign) NSInteger maxNum;
 @property (nonatomic, weak) UIViewController *vc;
-@property (nonatomic, copy) void (^CompleteChooseCallback)(UIImage *image);
-@property (nonatomic, copy) void (^photosCompleteChooseCallback)(NSArray *images);
+@property (nonatomic, copy) CompleteChooseCallback completeChooseCallback;
+@property (nonatomic, copy) PhotosCompleteChooseCallback photosCompleteChooseCallback;
 
 - (void)showActionSheet;
+
 + (void)cameraDisableAlert;
 
 /*系统相机封装
@@ -33,7 +35,7 @@ typedef enum CameraToolType
  *@param isEdit 是否编辑
  *@param success 返回image对象
  */
-+ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success;
++ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(CompleteChooseCallback)success;
 
 /*自定义选择图片封装
  *@param myVc
@@ -41,7 +43,7 @@ typedef enum CameraToolType
  *@param maxNum 最多可以选择多少张
  *@param success 返回image数组对象
  */
-+ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
++ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success;
 
 /*自定义选择图片封装
  *@param myVc
@@ -50,5 +52,6 @@ typedef enum CameraToolType
  *@param maxNum 最多可以选择多少张
  *@param success 返回image数组对象
  */
-+ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success;
++ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success;
+
 @end

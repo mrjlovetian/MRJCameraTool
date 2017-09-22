@@ -23,7 +23,7 @@
 
 ///占用一个像素的主屏幕位置
 /// 确保委托方法的顺利执行
-+(id)cameraToolDefault{
++ (id)cameraToolDefault{
     MRJCameraTool *camTool = [[MRJCameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
     camTool.backgroundColor = [UIColor clearColor];
     camTool.width = NEWPIC_WIDTH;
@@ -31,7 +31,7 @@
     return camTool;
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(void (^)(UIImage *image))success{
++ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(CompleteChooseCallback)success{
     MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.isEdit = isEdit;
     camTool.vc = curreVC;
@@ -40,7 +40,7 @@
     [curreVC.view addSubview:camTool];
     
     __weak MRJCameraTool *cam = camTool;
-    camTool.CompleteChooseCallback = ^(UIImage *image){
+    camTool.completeChooseCallback = ^(UIImage *image){
         [cam removeFromSuperview];
         if (image) {
             if (success) {
@@ -50,11 +50,11 @@
     };
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success{
++ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success{
     [self cameraAtView:curreVC sourceType:UIImagePickerControllerSourceTypePhotoLibrary imageWidth:width maxNum:maxNum success:success];
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(void (^)(NSArray *images))success{
++ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success{
     if (maxNum <= 0) {
         return;
     }
@@ -95,12 +95,13 @@
     [atView show];
 }
 
--(void)showActionSheet{
+- (void)showActionSheet{
     MRJActionSheet *choiceSheet = [[MRJActionSheet alloc] initWithTitle:nil buttonTitles:@[@"拍照", @"相册"] redButtonIndex:-1 defColor:nil delegate:self];
     [choiceSheet show];
 }
 
-#pragma mark UIActionSheetDelegate
+#pragma mark MRJActionSheetDelegate
+
 - (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex{
     
     if (buttonIndex == 2) return;
@@ -119,8 +120,8 @@
                     if (ss) {
                         UIImage *newImage = [myself imageWithImage:ss];
                         if (myself.type == CameraToolDefault) {
-                            if (myself.CompleteChooseCallback) {
-                                myself.CompleteChooseCallback(newImage);
+                            if (myself.completeChooseCallback) {
+                                myself.completeChooseCallback(newImage);
                             }
                         }
                         else if (myself.type == CameraToolCustomize) {
@@ -197,8 +198,8 @@
         [picker dismissViewControllerAnimated:YES completion:^{
             UIImage *newImage = [self imageWithImage:image];
             if (self.type == CameraToolDefault) {
-                if (self.CompleteChooseCallback) {
-                    self.CompleteChooseCallback(newImage);
+                if (self.completeChooseCallback) {
+                    self.completeChooseCallback(newImage);
                 }
             }
             else if (self.type == CameraToolCustomize) {
