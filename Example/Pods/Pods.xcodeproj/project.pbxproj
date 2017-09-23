@@ -12,12 +12,11 @@
 		049372C98175AD2D613A0370B2C162BC /* UIImage+FixOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 530605EEE46BE4479BA9C8E444BED325 /* UIImage+FixOrientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B59A7F9918075F8C104823FBECDEE3E /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1673A0B376C94544D9CA9681D4CF1 /* TOActivityCroppedImageProvider.m */; };
 		0B7119483E72AC7FBF07EEEC04505A1E /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = F086DF7A2C0889EDF3952457A74DA49F /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E092DEA072FC850F9EA1D9B183008DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBBF5876E567958341D28C551E1839 /* Foundation.framework */; };
 		0F45787DDCF31E85A2934FB3CEFC7F64 /* TZImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F835461298580D81C1FE9C24D5134F /* TZImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10432A2AB2B956CABC1648B79F68B230 /* TZGifPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B875F9A03DD119F60BA253D7F8DE6359 /* TZGifPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13257B4AB2ED466D2E173F82FA1A20F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBBF5876E567958341D28C551E1839 /* Foundation.framework */; };
 		13D9A489F1373FD8D2EC8F9081349F99 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C647125664E841E79823F4E9DFA1D81 /* TZPhotoPickerController.m */; };
 		20F5353DF91663720A789EB0E62210F9 /* LLSimpleCamera+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B0B56AA94D924616B10B9B7623C8E /* LLSimpleCamera+Helper.m */; };
+		25B8B385F3EA31CB5113B71840A3E75C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BB8CFA86B75BA172D728680557B98F /* UIKit.framework */; };
 		28904C9CFBDA310266F80A884D52E444 /* TZAssetModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B495C992EC167DA74DEECC311B0F1A2B /* TZAssetModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BCF5B2036611EC1A029CFC9FD1CD462 /* MRJActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = F23F473C278CBF6716A983889ABD26EA /* MRJActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3517548A3B1ECDA013AA988180DB58A7 /* TZVideoPlayerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 15683B9C0D71832CEAAD395FE798A6B6 /* TZVideoPlayerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,13 +24,15 @@
 		37B1C1645A05D2EA838C2C34F33BC64B /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC68288733CF5A31FE6310A08A39F4D /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3905B2D85BFB12229649037B1E8A701E /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = F16064F9A7887D4AA9BA1989CA95138D /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D60EAF39950245E9E1AEDB02524283A /* SKFCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E129442C21D27EB19A79AF6D776E88 /* SKFCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40A7CA56C6A63663465BE0B9A6DC4579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBBF5876E567958341D28C551E1839 /* Foundation.framework */; };
 		43397F3C63516F70E7D98150BDF3D760 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EE0033526213070AC7C7B4026562E4 /* TOCropOverlayView.m */; };
 		48AF7D5E33A39F677612717A488FA2B7 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D2305C471C672BD2DD637938F37709 /* NSBundle+TZImagePicker.m */; };
 		4B95282287A6CE39EDB04577BEC7ABB4 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9CA0E6336A801B14200E73E54C3C9 /* UIView+Layout.m */; };
+		4BBB612F12450A296B59B9718A4655AF /* MRJCameraTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29C288CBE2847DEE40E3F125C9A3535 /* MRJCameraTool-dummy.m */; };
 		4C0655FEFC4D2132E387316F1272391C /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D5515E41BF47CED4067F5AC7E1ACB0 /* TOCropView.m */; };
+		508BE9EA891FF829696BF232E720FE00 /* MRJCameraTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 49511306AC45894BB9CC7DF07BD903EC /* MRJCameraTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50AA2B9C5458FAECA90197B714E1A561 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 704E2C511896E639B01E38207CF789AF /* TOCropScrollView.m */; };
 		5C716C6D3EB4FD4514E26608FDA0DB1F /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F28201FDD570601B479B8773EF941507 /* TZImageManager.m */; };
+		5E36B2DBCE70BEEE31BAD530DF8ED94E /* MRJCameraTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF01BEF5B7065393FCAE13997E422C78 /* MRJCameraTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63F2C55995F54D5B7E74184DBC8A9F27 /* TZImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0D6062D63D691AFA1EC26936DD12D0 /* TZImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		642F165E31172C41B7A953948F49E5C2 /* LLSimpleCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 977946E8FCA8C570427E8732067BA4CC /* LLSimpleCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67B319677E0835FDBA742B74F62B86E6 /* SKFCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DD5D1201BEDF38C16ACFB54D432805 /* SKFCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,46 +40,45 @@
 		6A9EB8C51A9AAD86C021C41055493F01 /* SKFCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B49D0C79542C74F23194616E13016BFD /* SKFCamera.bundle */; };
 		6B5B04D8358D1C5A6C1DA006636EC7BE /* NSBundle+TZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D4AABF327891626179EADCD77447CC /* NSBundle+TZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D935168ABA90367D094D17052ABC990 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B560AF7BE0A6568A41E0DA9854CDFFA5 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DB56A12A680292F00CA7605945A8021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBBF5876E567958341D28C551E1839 /* Foundation.framework */; };
 		7020DE80A2883C51E366E948FE9AD8CE /* SKFCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AB8A507127DC5281D34008C3D4430 /* SKFCamera.m */; };
 		75A63DFC591EEBCBB1283C7022DD8F79 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 14433E1A23A77AF66CC8CB0B3DF27B05 /* TOCropViewControllerTransitioning.m */; };
 		7805C57047B7FF91836EE73F50B05482 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B677B473D7C66FD56A026C28FDD8ECF /* TZImagePickerController.bundle */; };
 		7BCEFB74AD698F8E7AB23FE8DE73D29E /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 807EB93C521211FB3E1565A055AAD704 /* TOCropToolbar.m */; };
-		7CE2C4D7EDB932D040C2863230FC0280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBBF5876E567958341D28C551E1839 /* Foundation.framework */; };
-		80ADEE84419D58C5EAFBE2FF23659827 /* MRJCameraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F5EB41EE101F50DED3FC5AA7DD5DF5 /* MRJCameraTool.m */; };
+		806B8547D00A0E74106E5AF1B17CF35B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */; };
 		81826C154DBB41184912E8153EDA7C38 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45308E13908BAE56F9E7F91D953FDD53 /* TZVideoPlayerController.m */; };
+		83518309DC041CD6750BE92A78C59D5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */; };
 		85EA525B30DEB36628284EF4EE7F53FE /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34573613BDDC2CA4C6B3CFD58B7A6485 /* UIImage+CropRotate.m */; };
-		860CDD5A4C9F0177E9A7E6389C1BA5B3 /* MRJCameraTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D223AE5086A8385C4E8F450C66D25CA /* MRJCameraTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8880F61CC07C2DC2DBB462413064E13A /* LLSimpleCamera+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = D72F88847B3BEE06A7CB019F1DF60680 /* LLSimpleCamera+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88E78B34926CCE0668AD4E9F06A53C47 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8328782D56E2340AA7C8A68546ED334 /* TZAssetModel.m */; };
 		8A99E6BEA1062B35ACB629A21A3CC58B /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC19C6113A4108AA1093FBD7D73AB /* LLSimpleCamera.m */; };
 		8C9E77B1B8FDD9D612D6AFB82DA7DD32 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5E3E79FB2A96E739FF02E29EB7A89 /* TZImagePickerController.m */; };
-		8E5FE848A13DAEFE4A1678A4A9985D28 /* MRJCameraTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E5D59F1E701C791AF5CF38BA5182F1 /* MRJCameraTool-dummy.m */; };
 		92781A5C533F19C5ECD0542E2E9C6DE1 /* TZPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33636BD390944F0D9A9DCD8FCEC85A /* TZPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		928884DAAD1EAAEF00480CAD514D3038 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC207D20CF0C153E861CD8BA620563C8 /* AssetsLibrary.framework */; };
 		94F6D36BD41923D6F7805A31DCAC72EA /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FE7DE7A2FE27559FEFA78C84AAB9BC /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95319DAF4A4B6C1A5DC885E42FDA88D7 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2405BA0501504D2513C2807148DCBC5F /* TZPhotoPreviewCell.m */; };
 		9746601C6C2DFA263A3BF4B33DC1E1AB /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A830DFF0A8FBE9C633F54B747F30E /* TOCropViewController.m */; };
 		97DC7B6F38E908F7F61AA94B07D5B321 /* TZPhotoPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = A24A29594FDC503C44F68CE662DD3743 /* TZPhotoPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A741A9F541D5F11D13D5DB3101D6C7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11EF7057DC54AFD8CDDFFEED12E6B /* UIKit.framework */; };
 		9BA3E9C91E94CDC23B6970A711EFCAC6 /* SKFCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36781282F18EC22BA50B2769473CD7D /* SKFCamera.framework */; };
 		9E8181524A7C11448C0CDF66254BE034 /* MRJActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F3E95112767F93A7AD549262D709E3 /* MRJActionSheet.m */; };
 		A409A48ADF9E475443B0B7CE7E16018D /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 0713398FF7EF02B89E1C93FCDC25BBA5 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66BE7FE4089FBC4A08041CFF27C9154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */; };
 		A7891CD907F551F67713FE559F831FC2 /* TZImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0ADA4D5E91733D260C96EB912DABF6A /* TZImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A914DBF72996EAD51265A2EA857A252D /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 731085878425886E8403E7C04FFD79FF /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA666EA7070A26D3C6D7B80C7E509B6D /* TZAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0CAEAE94229DE85EF17CFD13A7DC2F /* TZAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABF5C31E12CE504E064414CCA9E7B433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */; };
+		AE6E34489033BCA7DE764897FF1801F4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D384F46F94C0808D414A4935ACFBA3F /* Photos.framework */; };
 		B25DEF7CE076D062BEFA0AE03FE906B4 /* TZPhotoPreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB9005779A91310DCD0AEF3E2CD2698 /* TZPhotoPreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B36D70E95C55EC298A9DC7A58DC99239 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13370FDB0AD86D816A87F10808AF56 /* UIColor+Additions.m */; };
 		B37DC369413CAFA199A1DC560B41260C /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84C06E08C15D83DD94801673675473B /* TZGifPhotoPreviewController.m */; };
 		B40D6496A7437A365FE3DD83D3068B60 /* Pods-MRJCameraTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43B36E5332B273557C3B6A4A6BDFA5 /* Pods-MRJCameraTool_Example-dummy.m */; };
+		B63A6571902303BB75D4EC85CCEBEB8E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED240E87A7B762E933BCFAF27C7D1A3 /* AssetsLibrary.framework */; };
 		B89D7F87BE60E3A592695F2BC9F2065E /* MRJActionSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE9372AE85973339B3BF94A1F45AF10 /* MRJActionSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB5B200B026C466AF9CAB04C7D938868 /* TZImagePickerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3CC700F3A9581B662C63FF11AD8CD3 /* TZImagePickerController.framework */; };
+		C01DA78AA2E7900907F899BD0100437A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */; };
 		C093CFBC0453B2AFD6BDB767E2558DB9 /* Pods-MRJCameraTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E534220B3268D3EBDEA7EAE650222C07 /* Pods-MRJCameraTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3345C8A51A46973C6A3020DD244AF9C /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4131BB983EB9A35A9AA55F9C7E1FBFAA /* TZProgressView.m */; };
-		C33C17FCDC486A0162BBB650A3561741 /* MRJCameraTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F669CD07E1020167A8C7C2F7C3C9E5EB /* MRJCameraTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C794ABECC2AD5A2AECDDEF90F2D69C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBBF5876E567958341D28C551E1839 /* Foundation.framework */; };
 		CC3B5913AD9C129BB52865A0156FAE86 /* TZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A79680E4A24AB5B2A0BA7E1D65043F /* TZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDC0EE3550030F167202265BE40E8C05 /* MRJActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC25435B2C26DDA28DE9EA601079EF1C /* MRJActionSheet.framework */; };
+		D0EA6E4AD2E649593C246EA547ABE42D /* MRJCameraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7ACC3EAF3FD3682A28C822491A695D /* MRJCameraTool.m */; };
 		D2A46995A955E60B374D2C9EA7B74999 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F732A61EAA1E8239FBFAFCBE4DFE7121 /* TZPhotoPreviewController.m */; };
 		D64093743EB12C061E1C80D3EBF4B2FB /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E016F2E94E3657E6812DA12892A788 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D690FAE35799AA71FAB761E50563C245 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FD7D6D11589DD41965B77511606169 /* TZImageCropManager.m */; };
@@ -87,12 +87,12 @@
 		DEFD6D19E97380096ABA4DA84AC448C6 /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EDF20BE0B92FFDC46AAFE07670836D1 /* UIView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E18AA5FB2FA2BAE25C23246B718D210A /* Pods-MRJCameraTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2C510CC537A2A9AB982406C9130D77 /* Pods-MRJCameraTool_Tests-dummy.m */; };
 		E2B7621350937D2B62B054C4190B2323 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = C1391F2D1FF80B9C937D89899434640D /* TOCroppedImageAttributes.m */; };
+		E37983F14F80F0BAA5432934694F51F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */; };
 		E49F84BD75E077BAA0AD4307B4909C79 /* TZImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CB7211F25CCC8D1020C04C699E86D /* TZImagePickerController-dummy.m */; };
 		E592B4BBDC09F48478920C6D6C1FBFDE /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 750037E284F4ADEF1C38C6F7F54A58D0 /* UIImage+FixOrientation.m */; };
 		E5D8500C2C20F6AB61D350F00E86F61B /* UIColor+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = D17F20783D6400B0B9EA27F337CADA40 /* UIColor+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9E5124A42F3FAC4E233385D48435F4B /* SKFCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02AE6CA7454217F15B487486ADC5C2 /* SKFCamera-dummy.m */; };
 		EB221F00C7286DFED100FB2E86D2C9C4 /* Pods-MRJCameraTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B04927D169CB181F1C9C127F824442EA /* Pods-MRJCameraTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F69338F751AE0636BBFE376AF755CA98 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A902852444BE977B384D257718E8A4F /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,12 +151,10 @@
 		0084E6BBD0A8817DB231660DD63B4D12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0713398FF7EF02B89E1C93FCDC25BBA5 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = SKFCamera/TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
 		0961B745D0134D12F26EAF1C46BD0F28 /* Pods-MRJCameraTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCameraTool_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0A902852444BE977B384D257718E8A4F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		0B83C30C305708FE4B36B28F8D3BDD97 /* Pods-MRJCameraTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRJCameraTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0B892BF308A6C6CDB21266B609FFAC19 /* MRJActionSheet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJActionSheet.xcconfig; sourceTree = "<group>"; };
 		0EDF20BE0B92FFDC46AAFE07670836D1 /* UIView+Layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Layout.h"; path = "TZImagePickerController/TZImagePickerController/UIView+Layout.h"; sourceTree = "<group>"; };
 		10E9094C502411F0642E3524EFFE68F3 /* MRJActionSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRJActionSheet.modulemap; sourceTree = "<group>"; };
-		11028F476287E9B21BF7E5834C1C996B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114CB7211F25CCC8D1020C04C699E86D /* TZImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TZImagePickerController-dummy.m"; sourceTree = "<group>"; };
 		11D54EA7D8D245EDD7B6073F99B9F8D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14433E1A23A77AF66CC8CB0B3DF27B05 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = SKFCamera/TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
@@ -168,40 +166,41 @@
 		2405BA0501504D2513C2807148DCBC5F /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPreviewCell.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.m; sourceTree = "<group>"; };
 		248FD645DD7AB91368972539FEFC2DC4 /* Pods-MRJCameraTool_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCameraTool_Example-resources.sh"; sourceTree = "<group>"; };
 		274B0B56AA94D924616B10B9B7623C8E /* LLSimpleCamera+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LLSimpleCamera+Helper.m"; path = "SKFCamera/LLSimpleCamera+Helper.m"; sourceTree = "<group>"; };
+		28651C094C0B3C30A4855EE19A5C1358 /* MRJCameraTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJCameraTool-prefix.pch"; sourceTree = "<group>"; };
 		2B677B473D7C66FD56A026C28FDD8ECF /* TZImagePickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TZImagePickerController.bundle; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle; sourceTree = "<group>"; };
 		2C647125664E841E79823F4E9DFA1D81 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPickerController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.m; sourceTree = "<group>"; };
 		2C8AB8A507127DC5281D34008C3D4430 /* SKFCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKFCamera.m; path = SKFCamera/SKFCamera.m; sourceTree = "<group>"; };
 		2D02AE6CA7454217F15B487486ADC5C2 /* SKFCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKFCamera-dummy.m"; sourceTree = "<group>"; };
+		31607FE3B837491F2ADBB1873FBAB5E1 /* MRJCameraTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRJCameraTool.modulemap; sourceTree = "<group>"; };
 		34573613BDDC2CA4C6B3CFD58B7A6485 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "SKFCamera/UIImage+CropRotate.m"; sourceTree = "<group>"; };
 		34623C6D2EA4A1088B55D1208682B90D /* SKFCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SKFCamera.framework; path = SKFCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3618E065190B151515B25A080FC07577 /* MRJCameraTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJCameraTool-prefix.pch"; sourceTree = "<group>"; };
 		373BAB25864B792CC80E0F9E572F282F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		374DBBFEB1BF8803D7ADB284C27513B1 /* Pods-MRJCameraTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRJCameraTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		38EE117BC522DE058342E37590EDE6F7 /* Pods-MRJCameraTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRJCameraTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D13370FDB0AD86D816A87F10808AF56 /* UIColor+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Additions.m"; path = "MRJActionSheet/Classes/UIColor+Additions.m"; sourceTree = "<group>"; };
 		3DF9CA0E6336A801B14200E73E54C3C9 /* UIView+Layout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Layout.m"; path = "TZImagePickerController/TZImagePickerController/UIView+Layout.m"; sourceTree = "<group>"; };
 		4131BB983EB9A35A9AA55F9C7E1FBFAA /* TZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZProgressView.m; path = TZImagePickerController/TZImagePickerController/TZProgressView.m; sourceTree = "<group>"; };
+		42A9BE9E3A5EFE158DEA0283AADCBBF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44A79680E4A24AB5B2A0BA7E1D65043F /* TZLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZLocationManager.h; path = TZImagePickerController/TZImagePickerController/TZLocationManager.h; sourceTree = "<group>"; };
 		45308E13908BAE56F9E7F91D953FDD53 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZVideoPlayerController.m; path = TZImagePickerController/TZImagePickerController/TZVideoPlayerController.m; sourceTree = "<group>"; };
-		45A11EF7057DC54AFD8CDDFFEED12E6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		46CE660436D688ECB4B8C713D2EB1ED7 /* SKFCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKFCamera.xcconfig; sourceTree = "<group>"; };
+		49511306AC45894BB9CC7DF07BD903EC /* MRJCameraTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJCameraTool.h; sourceTree = "<group>"; };
 		4CFA962F9BF2AEF36254D4A70937FDA7 /* Pods-MRJCameraTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCameraTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4D0CAEAE94229DE85EF17CFD13A7DC2F /* TZAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZAssetCell.h; path = TZImagePickerController/TZImagePickerController/TZAssetCell.h; sourceTree = "<group>"; };
 		530605EEE46BE4479BA9C8E444BED325 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FixOrientation.h"; path = "SKFCamera/UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		56D1673A0B376C94544D9CA9681D4CF1 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = SKFCamera/TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
 		627E68D86AB8E199DAF0114B6FE0C9F9 /* SKFCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SKFCamera.modulemap; sourceTree = "<group>"; };
 		6359B63BEC8DF7A5CB8648D8BC5C18E9 /* Pods-MRJCameraTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCameraTool_Example.release.xcconfig"; sourceTree = "<group>"; };
-		684864E5CCF8BB3FAAF4E3BC5DB07CC4 /* MRJCameraTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRJCameraTool.modulemap; sourceTree = "<group>"; };
 		68726B1DCE36ED9D2C649AED9A78471A /* Pods-MRJCameraTool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCameraTool_Tests-resources.sh"; sourceTree = "<group>"; };
 		6AC5E3E79FB2A96E739FF02E29EB7A89 /* TZImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImagePickerController.m; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.m; sourceTree = "<group>"; };
+		6D384F46F94C0808D414A4935ACFBA3F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		704E2C511896E639B01E38207CF789AF /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = SKFCamera/TOCropScrollView.m; sourceTree = "<group>"; };
-		71E5D59F1E701C791AF5CF38BA5182F1 /* MRJCameraTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJCameraTool-dummy.m"; sourceTree = "<group>"; };
 		731085878425886E8403E7C04FFD79FF /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = SKFCamera/TOCropViewController.h; sourceTree = "<group>"; };
 		74B03B99CC60F251A7B1CEEABEB22501 /* SKFCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKFCamera-prefix.pch"; sourceTree = "<group>"; };
 		750037E284F4ADEF1C38C6F7F54A58D0 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FixOrientation.m"; path = "SKFCamera/UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		75101B91B0D38A4E37138D2929CA815F /* Pods_MRJCameraTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRJCameraTool_Example.framework; path = "Pods-MRJCameraTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		794895EF74D9C642246A7FCAEC85D8C4 /* TZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZProgressView.h; path = TZImagePickerController/TZImagePickerController/TZProgressView.h; sourceTree = "<group>"; };
-		79BBBF5876E567958341D28C551E1839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		807EB93C521211FB3E1565A055AAD704 /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = SKFCamera/TOCropToolbar.m; sourceTree = "<group>"; };
 		84E016F2E94E3657E6812DA12892A788 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "SKFCamera/UIImage+CropRotate.h"; sourceTree = "<group>"; };
 		84E129442C21D27EB19A79AF6D776E88 /* SKFCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKFCamera-umbrella.h"; sourceTree = "<group>"; };
@@ -212,8 +211,8 @@
 		977946E8FCA8C570427E8732067BA4CC /* LLSimpleCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLSimpleCamera.h; path = SKFCamera/LLSimpleCamera.h; sourceTree = "<group>"; };
 		980023303F14C0588D728D6BCC528AC8 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = SKFCamera/TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
 		99C676A9445B307159D3E9648A13BF77 /* Pods-MRJCameraTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MRJCameraTool_Tests.modulemap"; sourceTree = "<group>"; };
+		9A8E0202EB1B75805F9694CA98CED0E5 /* MRJCameraTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJCameraTool.xcconfig; sourceTree = "<group>"; };
 		9AFA42000F7B65288DF753E79203E257 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D223AE5086A8385C4E8F450C66D25CA /* MRJCameraTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJCameraTool.h; path = MRJCameraTool/Classes/MRJCameraTool.h; sourceTree = "<group>"; };
 		A24A29594FDC503C44F68CE662DD3743 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPickerController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.h; sourceTree = "<group>"; };
 		A8328782D56E2340AA7C8A68546ED334 /* TZAssetModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZAssetModel.m; path = TZImagePickerController/TZImagePickerController/TZAssetModel.m; sourceTree = "<group>"; };
 		A84C06E08C15D83DD94801673675473B /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZGifPhotoPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
@@ -223,6 +222,7 @@
 		AC0D6062D63D691AFA1EC26936DD12D0 /* TZImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageManager.h; path = TZImagePickerController/TZImagePickerController/TZImageManager.h; sourceTree = "<group>"; };
 		AC8363B094A73931DE116589A99A4CE8 /* Pods-MRJCameraTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRJCameraTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		ACF4ACD2DC79144005D1A76CD667B4AF /* TZImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TZImagePickerController.modulemap; sourceTree = "<group>"; };
+		AF01BEF5B7065393FCAE13997E422C78 /* MRJCameraTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJCameraTool-umbrella.h"; sourceTree = "<group>"; };
 		B04927D169CB181F1C9C127F824442EA /* Pods-MRJCameraTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRJCameraTool_Example-umbrella.h"; sourceTree = "<group>"; };
 		B0D4AABF327891626179EADCD77447CC /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TZImagePicker.h"; path = "TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
 		B0DD5D1201BEDF38C16ACFB54D432805 /* SKFCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKFCamera.h; path = SKFCamera/SKFCamera.h; sourceTree = "<group>"; };
@@ -236,11 +236,13 @@
 		BD703EE9863DA5BDC6CD115A7F0148A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDC68288733CF5A31FE6310A08A39F4D /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = SKFCamera/TOCropScrollView.h; sourceTree = "<group>"; };
 		BF06068A90E8FEAC96C198A4C7A5C881 /* Pods_MRJCameraTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRJCameraTool_Tests.framework; path = "Pods-MRJCameraTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0F5EB41EE101F50DED3FC5AA7DD5DF5 /* MRJCameraTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJCameraTool.m; path = MRJCameraTool/Classes/MRJCameraTool.m; sourceTree = "<group>"; };
 		C1391F2D1FF80B9C937D89899434640D /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = SKFCamera/TOCroppedImageAttributes.m; sourceTree = "<group>"; };
 		C2F835461298580D81C1FE9C24D5134F /* TZImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImagePickerController.h; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.h; sourceTree = "<group>"; };
+		C3BB8CFA86B75BA172D728680557B98F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C6BAA4DD86D8586ABA7D470A7042935C /* TZImageCropManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageCropManager.h; path = TZImagePickerController/TZImagePickerController/TZImageCropManager.h; sourceTree = "<group>"; };
 		CCDBB98A2BBEC00ED374C40FA1DDB3EB /* MRJCameraTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MRJCameraTool.framework; path = MRJCameraTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7ACC3EAF3FD3682A28C822491A695D /* MRJCameraTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJCameraTool.m; sourceTree = "<group>"; };
+		CED240E87A7B762E933BCFAF27C7D1A3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		CF43B36E5332B273557C3B6A4A6BDFA5 /* Pods-MRJCameraTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRJCameraTool_Example-dummy.m"; sourceTree = "<group>"; };
 		CFE9372AE85973339B3BF94A1F45AF10 /* MRJActionSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJActionSheet-umbrella.h"; sourceTree = "<group>"; };
 		D17F20783D6400B0B9EA27F337CADA40 /* UIColor+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Additions.h"; path = "MRJActionSheet/Classes/UIColor+Additions.h"; sourceTree = "<group>"; };
@@ -254,9 +256,7 @@
 		E534220B3268D3EBDEA7EAE650222C07 /* Pods-MRJCameraTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRJCameraTool_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E9F3E95112767F93A7AD549262D709E3 /* MRJActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJActionSheet.m; path = MRJActionSheet/Classes/MRJActionSheet.m; sourceTree = "<group>"; };
 		EA2C510CC537A2A9AB982406C9130D77 /* Pods-MRJCameraTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRJCameraTool_Tests-dummy.m"; sourceTree = "<group>"; };
-		EC207D20CF0C153E861CD8BA620563C8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		ED33636BD390944F0D9A9DCD8FCEC85A /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPreviewController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.h; sourceTree = "<group>"; };
-		EE298CF1E075D9C1BAEDBAC5E885DBA0 /* MRJCameraTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJCameraTool.xcconfig; sourceTree = "<group>"; };
 		EEBB55A91AFF22C8EB53ACDAC0DCB4B5 /* Pods-MRJCameraTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCameraTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6523A2EA681AC8567C47CCF1561B5D /* TZImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TZImagePickerController.framework; path = TZImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01A830DFF0A8FBE9C633F54B747F30E /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = SKFCamera/TOCropViewController.m; sourceTree = "<group>"; };
@@ -265,8 +265,8 @@
 		F16064F9A7887D4AA9BA1989CA95138D /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = SKFCamera/TOCroppedImageAttributes.h; sourceTree = "<group>"; };
 		F23F473C278CBF6716A983889ABD26EA /* MRJActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJActionSheet.h; path = MRJActionSheet/Classes/MRJActionSheet.h; sourceTree = "<group>"; };
 		F28201FDD570601B479B8773EF941507 /* TZImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageManager.m; path = TZImagePickerController/TZImagePickerController/TZImageManager.m; sourceTree = "<group>"; };
+		F29C288CBE2847DEE40E3F125C9A3535 /* MRJCameraTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJCameraTool-dummy.m"; sourceTree = "<group>"; };
 		F4D36772584992762BF030471F8BA0B6 /* TZLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZLocationManager.m; path = TZImagePickerController/TZImagePickerController/TZLocationManager.m; sourceTree = "<group>"; };
-		F669CD07E1020167A8C7C2F7C3C9E5EB /* MRJCameraTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJCameraTool-umbrella.h"; sourceTree = "<group>"; };
 		F732A61EAA1E8239FBFAFCBE4DFE7121 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,8 +275,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13257B4AB2ED466D2E173F82FA1A20F8 /* Foundation.framework in Frameworks */,
-				9A741A9F541D5F11D13D5DB3101D6C7A /* UIKit.framework in Frameworks */,
+				806B8547D00A0E74106E5AF1B17CF35B /* Foundation.framework in Frameworks */,
+				25B8B385F3EA31CB5113B71840A3E75C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +284,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E092DEA072FC850F9EA1D9B183008DA /* Foundation.framework in Frameworks */,
+				C01DA78AA2E7900907F899BD0100437A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C794ABECC2AD5A2AECDDEF90F2D69C01 /* Foundation.framework in Frameworks */,
+				ABF5C31E12CE504E064414CCA9E7B433 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +300,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928884DAAD1EAAEF00480CAD514D3038 /* AssetsLibrary.framework in Frameworks */,
-				6DB56A12A680292F00CA7605945A8021 /* Foundation.framework in Frameworks */,
-				F69338F751AE0636BBFE376AF755CA98 /* Photos.framework in Frameworks */,
+				B63A6571902303BB75D4EC85CCEBEB8E /* AssetsLibrary.framework in Frameworks */,
+				83518309DC041CD6750BE92A78C59D5C /* Foundation.framework in Frameworks */,
+				AE6E34489033BCA7DE764897FF1801F4 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CE2C4D7EDB932D040C2863230FC0280 /* Foundation.framework in Frameworks */,
+				A66BE7FE4089FBC4A08041CFF27C9154 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A7CA56C6A63663465BE0B9A6DC4579 /* Foundation.framework in Frameworks */,
+				E37983F14F80F0BAA5432934694F51F8 /* Foundation.framework in Frameworks */,
 				CDC0EE3550030F167202265BE40E8C05 /* MRJActionSheet.framework in Frameworks */,
 				9BA3E9C91E94CDC23B6970A711EFCAC6 /* SKFCamera.framework in Frameworks */,
 				BB5B200B026C466AF9CAB04C7D938868 /* TZImagePickerController.framework in Frameworks */,
@@ -328,6 +328,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B5974565F89127D0F57D655969BB65 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97F55E2434D79C1AD2C991E58106BFED /* MRJCameraTool */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		23674392D46AC33BA2759B1C262E7C57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,9 +435,19 @@
 				DC25435B2C26DDA28DE9EA601079EF1C /* MRJActionSheet.framework */,
 				D36781282F18EC22BA50B2769473CD7D /* SKFCamera.framework */,
 				8C3CC700F3A9581B662C63FF11AD8CD3 /* TZImagePickerController.framework */,
-				C311F97DE0B6DF55D8D5130560458722 /* iOS */,
+				BF802623A7B8FBE3D10AA424A5274DDB /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		512331C786F1CBABFBD49F89B8BC8C71 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49511306AC45894BB9CC7DF07BD903EC /* MRJCameraTool.h */,
+				CE7ACC3EAF3FD3682A28C822491A695D /* MRJCameraTool.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		609B1CF4A8C6E05D8C0B1648B87B2875 /* Pods-MRJCameraTool_Tests */ = {
@@ -450,12 +468,18 @@
 			path = "Target Support Files/Pods-MRJCameraTool_Tests";
 			sourceTree = "<group>";
 		};
-		6182EA79345BB73253F8D2B95A532A2B /* Development Pods */ = {
+		646A9F44B162CE571140D12A26445332 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D573E136D7C389B3F3FFFC2B6D6C6F28 /* MRJCameraTool */,
+				42A9BE9E3A5EFE158DEA0283AADCBBF5 /* Info.plist */,
+				31607FE3B837491F2ADBB1873FBAB5E1 /* MRJCameraTool.modulemap */,
+				9A8E0202EB1B75805F9694CA98CED0E5 /* MRJCameraTool.xcconfig */,
+				F29C288CBE2847DEE40E3F125C9A3535 /* MRJCameraTool-dummy.m */,
+				28651C094C0B3C30A4855EE19A5C1358 /* MRJCameraTool-prefix.pch */,
+				AF01BEF5B7065393FCAE13997E422C78 /* MRJCameraTool-umbrella.h */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MRJCameraTool";
 			sourceTree = "<group>";
 		};
 		649EA59334190D4C5D57EABAE63FE534 /* Products */ = {
@@ -511,7 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				6182EA79345BB73253F8D2B95A532A2B /* Development Pods */,
+				16B5974565F89127D0F57D655969BB65 /* Development Pods */,
 				47F011FDB644011A02616E37DC3C9F5D /* Frameworks */,
 				23674392D46AC33BA2759B1C262E7C57 /* Pods */,
 				649EA59334190D4C5D57EABAE63FE534 /* Products */,
@@ -541,26 +565,22 @@
 			path = "../Target Support Files/TZImagePickerController";
 			sourceTree = "<group>";
 		};
+		97F55E2434D79C1AD2C991E58106BFED /* MRJCameraTool */ = {
+			isa = PBXGroup;
+			children = (
+				FE4D70D2B6AFACFDC277EFA73EF96270 /* MRJCameraTool */,
+				646A9F44B162CE571140D12A26445332 /* Support Files */,
+			);
+			name = MRJCameraTool;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		9D39977F31830ABDC10395C5987C3BD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				2B677B473D7C66FD56A026C28FDD8ECF /* TZImagePickerController.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		9ED57EC70B691CF2FBA177FEA7212066 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				11028F476287E9B21BF7E5834C1C996B /* Info.plist */,
-				684864E5CCF8BB3FAAF4E3BC5DB07CC4 /* MRJCameraTool.modulemap */,
-				EE298CF1E075D9C1BAEDBAC5E885DBA0 /* MRJCameraTool.xcconfig */,
-				71E5D59F1E701C791AF5CF38BA5182F1 /* MRJCameraTool-dummy.m */,
-				3618E065190B151515B25A080FC07577 /* MRJCameraTool-prefix.pch */,
-				F669CD07E1020167A8C7C2F7C3C9E5EB /* MRJCameraTool-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MRJCameraTool";
 			sourceTree = "<group>";
 		};
 		AF5D2E471851828246CDBFA24DA23003 /* Support Files */ = {
@@ -586,37 +606,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C311F97DE0B6DF55D8D5130560458722 /* iOS */ = {
+		BF802623A7B8FBE3D10AA424A5274DDB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EC207D20CF0C153E861CD8BA620563C8 /* AssetsLibrary.framework */,
-				79BBBF5876E567958341D28C551E1839 /* Foundation.framework */,
-				0A902852444BE977B384D257718E8A4F /* Photos.framework */,
-				45A11EF7057DC54AFD8CDDFFEED12E6B /* UIKit.framework */,
+				CED240E87A7B762E933BCFAF27C7D1A3 /* AssetsLibrary.framework */,
+				5308730B68F7CB9878880C44CFCD35B3 /* Foundation.framework */,
+				6D384F46F94C0808D414A4935ACFBA3F /* Photos.framework */,
+				C3BB8CFA86B75BA172D728680557B98F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D573E136D7C389B3F3FFFC2B6D6C6F28 /* MRJCameraTool */ = {
+		FE4D70D2B6AFACFDC277EFA73EF96270 /* MRJCameraTool */ = {
 			isa = PBXGroup;
 			children = (
-				9D223AE5086A8385C4E8F450C66D25CA /* MRJCameraTool.h */,
-				C0F5EB41EE101F50DED3FC5AA7DD5DF5 /* MRJCameraTool.m */,
-				9ED57EC70B691CF2FBA177FEA7212066 /* Support Files */,
+				512331C786F1CBABFBD49F89B8BC8C71 /* Classes */,
 			);
 			name = MRJCameraTool;
-			path = ../..;
+			path = MRJCameraTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		27153DD1FBDCF0A71FDB50CACCAF0E6B /* Headers */ = {
+		212C2E034315CB6DCA4FD9EC554E76FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33C17FCDC486A0162BBB650A3561741 /* MRJCameraTool-umbrella.h in Headers */,
-				860CDD5A4C9F0177E9A7E6389C1BA5B3 /* MRJCameraTool.h in Headers */,
+				5E36B2DBCE70BEEE31BAD530DF8ED94E /* MRJCameraTool-umbrella.h in Headers */,
+				508BE9EA891FF829696BF232E720FE00 /* MRJCameraTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,9 +787,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA59BC077AD7987165358F6167E03583 /* Build configuration list for PBXNativeTarget "MRJCameraTool" */;
 			buildPhases = (
-				FBA919999B5E89AD6981130B16B76D2F /* Sources */,
+				2F4F80F7936271A464D48B8F013C2582 /* Sources */,
 				FDB4835FD766AB804FC646CB65A5C379 /* Frameworks */,
-				27153DD1FBDCF0A71FDB50CACCAF0E6B /* Headers */,
+				212C2E034315CB6DCA4FD9EC554E76FC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -809,7 +827,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -854,6 +872,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F4F80F7936271A464D48B8F013C2582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBB612F12450A296B59B9718A4655AF /* MRJCameraTool-dummy.m in Sources */,
+				D0EA6E4AD2E649593C246EA547ABE42D /* MRJCameraTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49540B847A6B445058637C81056B2D30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -923,15 +950,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBA919999B5E89AD6981130B16B76D2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E5FE848A13DAEFE4A1678A4A9985D28 /* MRJCameraTool-dummy.m in Sources */,
-				80ADEE84419D58C5EAFBE2FF23659827 /* MRJCameraTool.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -980,11 +998,111 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07D9F1987CF8C2CC5DE95CDB55362C9A /* Release */ = {
+		06E6D459EBF0D2963390B7F454C0EFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFA962F9BF2AEF36254D4A70937FDA7 /* Pods-MRJCameraTool_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCameraTool_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1534874C60D8F92DB06DE3230B0DB4CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B892BF308A6C6CDB21266B609FFAC19 /* MRJActionSheet.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJActionSheet/MRJActionSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJActionSheet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJActionSheet/MRJActionSheet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MRJActionSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BC274F13548DEA75414FF460E80E42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEBB55A91AFF22C8EB53ACDAC0DCB4B5 /* Pods-MRJCameraTool_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCameraTool_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Tests/Pods-MRJCameraTool_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCameraTool_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		379E62D458B233775F0DB16612C42125 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46CE660436D688ECB4B8C713D2EB1ED7 /* SKFCamera.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1006,153 +1124,16 @@
 				PRODUCT_NAME = SKFCamera;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		10DC61DD1070A318EAEEA2FCD002CB56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE298CF1E075D9C1BAEDBAC5E885DBA0 /* MRJCameraTool.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MRJCameraTool/MRJCameraTool-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MRJCameraTool/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MRJCameraTool/MRJCameraTool.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MRJCameraTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		223B2BAB4E1FD738DDE5563F95205CE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE298CF1E075D9C1BAEDBAC5E885DBA0 /* MRJCameraTool.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MRJCameraTool/MRJCameraTool-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MRJCameraTool/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MRJCameraTool/MRJCameraTool.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MRJCameraTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		33A3AD1FAF3FA345E03F875E682E0263 /* Debug */ = {
+		3A42364FD3501A1C055E9182F5C5DC76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1585412FEE81C8AE7257D76BCE671827 /* TZImagePickerController.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController/TZImagePickerController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TZImagePickerController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TZImagePickerController/TZImagePickerController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TZImagePickerController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		45C24167643012C53872BB09C870DFF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B286D1F03926ABCB691549AC6C7182CC /* Pods-MRJCameraTool_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MRJCameraTool_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Tests/Pods-MRJCameraTool_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRJCameraTool_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		47636746D2F8DE7722CFD43912D2EA9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1585412FEE81C8AE7257D76BCE671827 /* TZImagePickerController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1174,19 +1155,79 @@
 				PRODUCT_NAME = TZImagePickerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+		4B7C673D2A0AF6645870FC39D17E7BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CE660436D688ECB4B8C713D2EB1ED7 /* SKFCamera.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SKFCamera/SKFCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SKFCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SKFCamera/SKFCamera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SKFCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D0F6E05184EB5B0048D8A19B8E8811F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B892BF308A6C6CDB21266B609FFAC19 /* MRJActionSheet.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJActionSheet/MRJActionSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJActionSheet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJActionSheet/MRJActionSheet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MRJActionSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1194,13 +1235,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -1225,117 +1263,11 @@
 			};
 			name = Release;
 		};
-		7BB9BDE1F14B9661BD5A48AAC26E3407 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6359B63BEC8DF7A5CB8648D8BC5C18E9 /* Pods-MRJCameraTool_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRJCameraTool_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8100E557FB4619EC37362374336C1064 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CFA962F9BF2AEF36254D4A70937FDA7 /* Pods-MRJCameraTool_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MRJCameraTool_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8AFA80AF8F6D0B909D4DA507AC77BEBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B892BF308A6C6CDB21266B609FFAC19 /* MRJActionSheet.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MRJActionSheet/MRJActionSheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MRJActionSheet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MRJActionSheet/MRJActionSheet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MRJActionSheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1343,13 +1275,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -1374,16 +1303,80 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BF993D3F76C7EE8B7BDDF2AF44E8E0B4 /* Debug */ = {
+		ADE5D0010025FA93BE0656E4F0D28136 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46CE660436D688ECB4B8C713D2EB1ED7 /* SKFCamera.xcconfig */;
+			baseConfigurationReference = 9A8E0202EB1B75805F9694CA98CED0E5 /* MRJCameraTool.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJCameraTool/MRJCameraTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJCameraTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJCameraTool/MRJCameraTool.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MRJCameraTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B78650C05EB502A72620EF755D6F5F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6359B63BEC8DF7A5CB8648D8BC5C18E9 /* Pods-MRJCameraTool_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCameraTool_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE6861473A97118D8267C58C0196D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1585412FEE81C8AE7257D76BCE671827 /* TZImagePickerController.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1395,28 +1388,26 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SKFCamera/SKFCamera-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SKFCamera/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController/TZImagePickerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TZImagePickerController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SKFCamera/SKFCamera.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TZImagePickerController/TZImagePickerController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SKFCamera;
+				PRODUCT_NAME = TZImagePickerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D0FB936FB7C70227AAFBB7B321B9BF9B /* Debug */ = {
+		CEC8424A44E01B5D3744548C9BF54A60 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B892BF308A6C6CDB21266B609FFAC19 /* MRJActionSheet.xcconfig */;
+			baseConfigurationReference = 9A8E0202EB1B75805F9694CA98CED0E5 /* MRJCameraTool.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1428,33 +1419,31 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MRJActionSheet/MRJActionSheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MRJActionSheet/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MRJCameraTool/MRJCameraTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJCameraTool/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MRJActionSheet/MRJActionSheet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/MRJCameraTool/MRJCameraTool.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MRJActionSheet;
+				PRODUCT_NAME = MRJCameraTool;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F48ADD55074DAC2B1619874830250088 /* Debug */ = {
+		DD0E6252D078E9955BA8246034113AEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEBB55A91AFF22C8EB53ACDAC0DCB4B5 /* Pods-MRJCameraTool_Tests.debug.xcconfig */;
+			baseConfigurationReference = B286D1F03926ABCB691549AC6C7182CC /* Pods-MRJCameraTool_Tests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1467,7 +1456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MRJCameraTool_Tests/Pods-MRJCameraTool_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1479,7 +1468,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1487,8 +1476,8 @@
 		07ACF5246CF0FE1520296EE1B8684FD3 /* Build configuration list for PBXNativeTarget "Pods-MRJCameraTool_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F48ADD55074DAC2B1619874830250088 /* Debug */,
-				45C24167643012C53872BB09C870DFF2 /* Release */,
+				1BC274F13548DEA75414FF460E80E42A /* Debug */,
+				DD0E6252D078E9955BA8246034113AEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1496,8 +1485,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
-				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1505,8 +1494,8 @@
 		39FD32D96473133949A3AB3BDE8028E3 /* Build configuration list for PBXNativeTarget "SKFCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF993D3F76C7EE8B7BDDF2AF44E8E0B4 /* Debug */,
-				07D9F1987CF8C2CC5DE95CDB55362C9A /* Release */,
+				4B7C673D2A0AF6645870FC39D17E7BEA /* Debug */,
+				379E62D458B233775F0DB16612C42125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1514,8 +1503,8 @@
 		52DD7CF2FCDDCAADD05B971541A662EC /* Build configuration list for PBXNativeTarget "MRJActionSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0FB936FB7C70227AAFBB7B321B9BF9B /* Debug */,
-				8AFA80AF8F6D0B909D4DA507AC77BEBF /* Release */,
+				1534874C60D8F92DB06DE3230B0DB4CF /* Debug */,
+				8D0F6E05184EB5B0048D8A19B8E8811F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1523,8 +1512,8 @@
 		86DB89B80727E59BED4987DA16BFA10C /* Build configuration list for PBXNativeTarget "Pods-MRJCameraTool_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8100E557FB4619EC37362374336C1064 /* Debug */,
-				7BB9BDE1F14B9661BD5A48AAC26E3407 /* Release */,
+				06E6D459EBF0D2963390B7F454C0EFC2 /* Debug */,
+				B78650C05EB502A72620EF755D6F5F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1532,8 +1521,8 @@
 		AA59BC077AD7987165358F6167E03583 /* Build configuration list for PBXNativeTarget "MRJCameraTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10DC61DD1070A318EAEEA2FCD002CB56 /* Debug */,
-				223B2BAB4E1FD738DDE5563F95205CE1 /* Release */,
+				CEC8424A44E01B5D3744548C9BF54A60 /* Debug */,
+				ADE5D0010025FA93BE0656E4F0D28136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1541,8 +1530,8 @@
 		F988F1EFDF0EBAFEA5CD3721BDFB8F9D /* Build configuration list for PBXNativeTarget "TZImagePickerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33A3AD1FAF3FA345E03F875E682E0263 /* Debug */,
-				47636746D2F8DE7722CFD43912D2EA9A /* Release */,
+				BE6861473A97118D8267C58C0196D2A4 /* Debug */,
+				3A42364FD3501A1C055E9182F5C5DC76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

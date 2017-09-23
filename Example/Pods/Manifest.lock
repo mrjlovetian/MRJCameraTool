@@ -1,6 +1,6 @@
 PODS:
   - MRJActionSheet (0.1.3)
-  - MRJCameraTool (0.1.0):
+  - MRJCameraTool (0.1.4):
     - MRJActionSheet
     - SKFCamera
     - TZImagePickerController
@@ -16,10 +16,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MRJActionSheet: c41bd1aeabb67d0692bbb53cef0b23545bdfafe9
-  MRJCameraTool: a8f8f23244715527c6def9ec8065881c7f858bac
+  MRJCameraTool: 91f0780dd2a6104388186fe2f1ce1e791809688b
   SKFCamera: d63fa8ca23eb5ec51ade911fcbe736ffc5b37b4d
   TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
 
 PODFILE CHECKSUM: 37e05a04e7193ad5d7836e006ef130cd0519741d
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.1.1

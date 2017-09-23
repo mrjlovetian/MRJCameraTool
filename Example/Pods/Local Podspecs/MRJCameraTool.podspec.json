@@ -1,9 +1,9 @@
 {
   "name": "MRJCameraTool",
-  "version": "0.1.0",
-  "summary": "A short description of MRJCameraTool.",
+  "version": "0.1.4",
+  "summary": "一个简易的图片相册选择器,依赖其他的相册相机选择",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mrjlovetian@gmail.com/MRJCameraTool",
+  "homepage": "https://github.com/mrjlovetian/MRJCameraTool",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "mrjlovetian@gmail.com": "mrjyuhongjiang@gmail.com"
   },
   "source": {
-    "git": "https://github.com/mrjlovetian@gmail.com/MRJCameraTool.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/mrjlovetian/MRJCameraTool.git",
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"

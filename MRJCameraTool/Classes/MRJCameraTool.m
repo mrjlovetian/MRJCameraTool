@@ -12,9 +12,6 @@
 #import "MRJActionSheet.h"
 #import "UIColor+Additions.h"
 
-///返回图片的最大分辨率宽度
-#define  NEWPIC_WIDTH                         640.0
-
 @interface MRJCameraTool ()<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, TZImagePickerControllerDelegate, MRJActionSheetDelegate>
 @property (nonatomic, strong)NSMutableArray *selectImage;
 @end
@@ -26,7 +23,7 @@
 + (id)cameraToolDefault{
     MRJCameraTool *camTool = [[MRJCameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
     camTool.backgroundColor = [UIColor clearColor];
-    camTool.width = NEWPIC_WIDTH;
+    camTool.width = 640.0;
     camTool.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     return camTool;
 }
@@ -54,7 +51,7 @@
     [self cameraAtView:curreVC sourceType:UIImagePickerControllerSourceTypePhotoLibrary imageWidth:width maxNum:maxNum success:success];
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success{
++ (void)cameraAtView:(UIViewController *)curreVC sourceType:(UIImagePickerControllerSourceType)type imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success {
     if (maxNum <= 0) {
         return;
     }
@@ -102,7 +99,7 @@
 
 #pragma mark MRJActionSheetDelegate
 
-- (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex{
+- (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex {
     
     if (buttonIndex == 2) return;
     
@@ -139,7 +136,6 @@
                 picker.sourceType = type;
                 [self.vc presentViewController:picker animated:YES completion:nil];
             }
-            
         }
     }
     else if (self.type == CameraToolCustomize) {
@@ -153,7 +149,7 @@
 }
 
 /// 跳相机
-- (void)goCamera{
+- (void)goCamera {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.allowsEditing = NO;
@@ -166,7 +162,7 @@
 }
 
 /// 跳相册
-- (void)goPhotosPicker{
+- (void)goPhotosPicker {
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:self.maxNum delegate:self];
     imagePickerVc.photoWidth=self.width;
     imagePickerVc.barItemTextColor = [UIColor colorWithHexString:@"0091e8"];
@@ -191,7 +187,6 @@
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     UIImage *image = [info objectForKey:_isEdit?UIImagePickerControllerEditedImage:UIImagePickerControllerOriginalImage];
     if (image) {
@@ -212,15 +207,14 @@
     }
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [picker dismissViewControllerAnimated:YES completion:^{
         
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     }];
 }
 
--(UIImage*)imageWithImage:(UIImage*)image
-{
+- (UIImage*)imageWithImage:(UIImage*)image {
     float Proportion = image.size.width/image.size.height;
     CGSize newSize = CGSizeMake(self.width, self.width/Proportion);
     

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum CameraToolType{
+typedef enum : NSUInteger {
     CameraToolDefault = 0, // 系统相册
     CameraToolCustomize,   // 自定义
 } CameraToolType;
