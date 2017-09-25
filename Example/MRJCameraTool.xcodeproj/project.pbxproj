@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0300E8AB9C7C1C59B542C662 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0300E8AB9C7C1C59B542C662 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		32B5E3536BE594018652052A /* Pods-MRJCameraTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRJCameraTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		461BE0777B6C7D1DD44A28A0 /* Pods_MRJCameraTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRJCameraTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA8BA23F470808D30BCD17C /* Pods-MRJCameraTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRJCameraTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRJCameraTool_Tests/Pods-MRJCameraTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86638CB59F1342E61B8B0C80 /* Pods_MRJCameraTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRJCameraTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93D2B654A773A4073308186E /* MRJCameraTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MRJCameraTool.podspec; path = ../MRJCameraTool.podspec; sourceTree = "<group>"; };
-		C7363D4D37EF3B256A8DEB9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		93D2B654A773A4073308186E /* MRJCameraTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MRJCameraTool.podspec; path = ../MRJCameraTool.podspec; sourceTree = "<group>"; };
+		C7363D4D37EF3B256A8DEB9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EEF7525FE0A835E3E17858E2 /* Pods-MRJCameraTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRJCameraTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRJCameraTool_Example/Pods-MRJCameraTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

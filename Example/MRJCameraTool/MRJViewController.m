@@ -7,6 +7,7 @@
 //
 
 #import "MRJViewController.h"
+#import <MRJCameraTool/MRJCameraTool.h>
 
 @interface MRJViewController ()
 
@@ -17,7 +18,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(60, 60, 60, 60);
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(Click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)Click{
+    [MRJCameraTool cameraAtView:self imageWidth:320 maxNum:6 success:^(NSArray *images) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
