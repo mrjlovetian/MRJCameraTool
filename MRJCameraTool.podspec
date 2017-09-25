@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MRJCameraTool'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = '一个简易的图片相册选择器,依赖其他的相册相机选择'
 
 # This description is used to generate tags and improve search results.
