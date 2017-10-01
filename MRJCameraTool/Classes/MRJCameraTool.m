@@ -20,7 +20,7 @@
 
 ///占用一个像素的主屏幕位置
 /// 确保委托方法的顺利执行
-+ (id)cameraToolDefault{
++ (id)cameraToolDefault {
     MRJCameraTool *camTool = [[MRJCameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
     camTool.backgroundColor = [UIColor clearColor];
     camTool.width = 640.0;
@@ -28,16 +28,15 @@
     return camTool;
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(CompleteChooseCallback)success{
++ (void)cameraAtView:(UIViewController *)curreVC isEdit:(BOOL)isEdit success:(CompleteChooseCallback)success {
     MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.isEdit = isEdit;
     camTool.vc = curreVC;
     camTool.type = CameraToolDefault;
     [camTool showActionSheet];
     [curreVC.view addSubview:camTool];
-    
     __weak MRJCameraTool *cam = camTool;
-    camTool.completeChooseCallback = ^(UIImage *image){
+    camTool.completeChooseCallback = ^(UIImage *image) {
         [cam removeFromSuperview];
         if (image) {
             if (success) {
@@ -47,7 +46,7 @@
     };
 }
 
-+ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success{
++ (void)cameraAtView:(UIViewController *)curreVC imageWidth:(CGFloat)width maxNum:(NSInteger)maxNum success:(PhotosCompleteChooseCallback)success {
     [self cameraAtView:curreVC sourceType:UIImagePickerControllerSourceTypePhotoLibrary imageWidth:width maxNum:maxNum success:success];
 }
 
@@ -61,7 +60,6 @@
     camTool.maxNum = maxNum;
     camTool.width = width;
     [curreVC.view addSubview:camTool];
-    
     switch (type) {
         case UIImagePickerControllerSourceTypePhotoLibrary:
             [camTool showActionSheet];
@@ -75,9 +73,8 @@
         default:
             break;
     }
-    
     __weak MRJCameraTool *cam = camTool;
-    camTool.photosCompleteChooseCallback = ^(NSArray *images){
+    camTool.photosCompleteChooseCallback = ^(NSArray *images) {
         if (images) {
             if (success) {
                 success(images);
@@ -87,12 +84,12 @@
     };
 }
 
-+ (void)cameraDisableAlert{
++ (void)cameraDisableAlert {
     UIAlertView *atView = [[UIAlertView alloc]initWithTitle:@"不能打开相机" message:@"设置 - > 隐私 - > 相机" delegate:nil cancelButtonTitle:@"去设置" otherButtonTitles:nil, nil];
     [atView show];
 }
 
-- (void)showActionSheet{
+- (void)showActionSheet {
     MRJActionSheet *choiceSheet = [[MRJActionSheet alloc] initWithTitle:nil buttonTitles:@[@"拍照", @"相册"] redButtonIndex:-1 defColor:nil delegate:self];
     [choiceSheet show];
 }
@@ -100,20 +97,17 @@
 #pragma mark MRJActionSheetDelegate
 
 - (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex {
-    
     if (buttonIndex == 2) return;
-    
     if (self.type == CameraToolDefault) {
-        
         UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypePhotoLibrary;
         if([UIImagePickerController isSourceTypeAvailable:type]){
-            if( buttonIndex == 0 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+            if( buttonIndex == 0 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
                 type = UIImagePickerControllerSourceTypeCamera;
             }
-            if (type==UIImagePickerControllerSourceTypeCamera) {
-                SKFCamera *homec=[[SKFCamera alloc]init];
-                __weak typeof(self)myself=self;
-                homec.fininshcapture=^(UIImage *ss){
+            if (type == UIImagePickerControllerSourceTypeCamera) {
+                SKFCamera *homec = [[SKFCamera alloc]init];
+                __weak typeof(self) myself = self;
+                homec.fininshcapture = ^(UIImage *ss) {
                     if (ss) {
                         UIImage *newImage = [myself imageWithImage:ss];
                         if (myself.type == CameraToolDefault) {
@@ -141,7 +135,6 @@
     else if (self.type == CameraToolCustomize) {
         if (buttonIndex == 0) {
             [self goCamera];
-            
         } else  if (buttonIndex == 1) {
             [self goPhotosPicker];
         }
@@ -176,11 +169,11 @@
 
 #pragma mark - KKAssetPickerController Delegate
 
-- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto{
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto {
     self.photosCompleteChooseCallback(photos);
 }
 
-- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingGifImage:(UIImage *)animatedImage sourceAssets:(id)asset{
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingGifImage:(UIImage *)animatedImage sourceAssets:(id)asset {
     self.photosCompleteChooseCallback(@[animatedImage]);
 }
 
@@ -209,15 +202,13 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [picker dismissViewControllerAnimated:YES completion:^{
-        
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     }];
 }
 
-- (UIImage*)imageWithImage:(UIImage*)image {
+- (UIImage *)imageWithImage:(UIImage*)image {
     float Proportion = image.size.width/image.size.height;
     CGSize newSize = CGSizeMake(self.width, self.width/Proportion);
-    
     if (image.size.width > self.width) {
         UIGraphicsBeginImageContext(newSize);
         [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
