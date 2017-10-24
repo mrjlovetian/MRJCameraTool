@@ -207,8 +207,8 @@
 }
 
 - (UIImage *)imageWithImage:(UIImage*)image {
-    float Proportion = image.size.width/image.size.height;
-    CGSize newSize = CGSizeMake(self.width, self.width/Proportion);
+    float Proportion = image.size.width / image.size.height;
+    CGSize newSize = CGSizeMake(self.width, self.width / Proportion);
     if (image.size.width > self.width) {
         UIGraphicsBeginImageContext(newSize);
         [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];

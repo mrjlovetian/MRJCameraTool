@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
-    CameraToolDefault = 0, // 系统相册
-    CameraToolCustomize,   // 自定义
+    CameraToolDefault = 0, /// 系统相册
+    CameraToolCustomize,   /// 自定义
 } CameraToolType;
 
 typedef void (^CompleteChooseCallback)(UIImage *image);
