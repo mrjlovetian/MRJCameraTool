@@ -13,7 +13,9 @@
 #import "UIColor+Additions.h"
 
 @interface MRJCameraTool ()<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, TZImagePickerControllerDelegate, MRJActionSheetDelegate>
+
 @property (nonatomic, strong)NSMutableArray *selectImage;
+
 @end
 
 @implementation MRJCameraTool
@@ -114,16 +116,15 @@
                             if (myself.completeChooseCallback) {
                                 myself.completeChooseCallback(newImage);
                             }
-                        }
-                        else if (myself.type == CameraToolCustomize) {
+                        } else if (myself.type == CameraToolCustomize) {
                             if (myself.photosCompleteChooseCallback) {
                                 myself.photosCompleteChooseCallback(@[newImage]);
                             }
                         }
                     }
-                } ;
+                };
                 [self.vc presentViewController:homec animated:NO completion:^{}];
-            }else{
+            } else {
                 UIImagePickerController *picker = [[UIImagePickerController alloc] init];
                 picker.allowsEditing = self.isEdit;
                 picker.delegate = self;
@@ -135,7 +136,7 @@
     else if (self.type == CameraToolCustomize) {
         if (buttonIndex == 0) {
             [self goCamera];
-        } else  if (buttonIndex == 1) {
+        } else if (buttonIndex == 1) {
             [self goPhotosPicker];
         }
     }
@@ -157,7 +158,7 @@
 /// 跳相册
 - (void)goPhotosPicker {
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:self.maxNum delegate:self];
-    imagePickerVc.photoWidth=self.width;
+    imagePickerVc.photoWidth = self.width;
     imagePickerVc.barItemTextColor = [UIColor colorWithHexString:@"0091e8"];
     imagePickerVc.naviBgColor = [UIColor whiteColor];
     imagePickerVc.naviTitleColor = [UIColor colorWithHexString:@"333333"];
@@ -189,8 +190,7 @@
                 if (self.completeChooseCallback) {
                     self.completeChooseCallback(newImage);
                 }
-            }
-            else if (self.type == CameraToolCustomize) {
+            } else if (self.type == CameraToolCustomize) {
                 if (self.photosCompleteChooseCallback) {
                     self.photosCompleteChooseCallback(@[newImage]);
                 }
