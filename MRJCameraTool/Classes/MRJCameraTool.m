@@ -20,7 +20,7 @@
 
 @implementation MRJCameraTool
 
-///占用一个像素的主屏幕位置
+/// 占用一个像素的主屏幕位置
 /// 确保委托方法的顺利执行
 + (id)cameraToolDefault {
     MRJCameraTool *camTool = [[MRJCameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
@@ -102,8 +102,8 @@
     if (buttonIndex == 2) return;
     if (self.type == CameraToolDefault) {
         UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypePhotoLibrary;
-        if([UIImagePickerController isSourceTypeAvailable:type]){
-            if( buttonIndex == 0 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        if ([UIImagePickerController isSourceTypeAvailable:type]){
+            if ( buttonIndex == 0 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
                 type = UIImagePickerControllerSourceTypeCamera;
             }
             if (type == UIImagePickerControllerSourceTypeCamera) {
@@ -132,8 +132,7 @@
                 [self.vc presentViewController:picker animated:YES completion:nil];
             }
         }
-    }
-    else if (self.type == CameraToolCustomize) {
+    } else if (self.type == CameraToolCustomize) {
         if (buttonIndex == 0) {
             [self goCamera];
         } else if (buttonIndex == 1) {
