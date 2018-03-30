@@ -3,8 +3,6 @@
 //  Pods
 //
 //  Created by Mr on 2017/9/18.
-//
-//
 
 #import <UIKit/UIKit.h>
 
@@ -21,7 +19,7 @@ typedef void (^PhotosCompleteChooseCallback)(NSArray *images);
 @property (nonatomic, assign) UIImagePickerControllerSourceType sourceType;
 @property (nonatomic, assign) BOOL isEdit;///编辑设置
 @property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CameraToolType type;
+@property (nonatomic, assign) CameraToolType cameraToolType;
 @property (nonatomic, assign) NSInteger maxNum;
 @property (nonatomic, weak) UIViewController *vc;
 @property (nonatomic, copy) CompleteChooseCallback completeChooseCallback;

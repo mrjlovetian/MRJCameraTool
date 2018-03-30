@@ -3,8 +3,6 @@
 //  Pods
 //
 //  Created by Mr on 2017/9/18.
-//
-//
 
 #import "MRJCameraTool.h"
 #import "TZImagePickerController.h"
@@ -14,7 +12,7 @@
 
 @interface MRJCameraTool ()<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, TZImagePickerControllerDelegate, MRJActionSheetDelegate>
 
-@property (nonatomic, strong)NSMutableArray *selectImage;
+@property (nonatomic, strong) NSMutableArray *selectImage;
 
 @end
 
@@ -34,7 +32,7 @@
     MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.isEdit = isEdit;
     camTool.vc = curreVC;
-    camTool.type = CameraToolDefault;
+    camTool.cameraToolType = CameraToolDefault;
     [camTool showActionSheet];
     [curreVC.view addSubview:camTool];
     __weak MRJCameraTool *cam = camTool;
@@ -58,7 +56,7 @@
     }
     MRJCameraTool *camTool = [self cameraToolDefault];
     camTool.vc = curreVC;
-    camTool.type = CameraToolCustomize;
+    camTool.cameraToolType = CameraToolCustomize;
     camTool.maxNum = maxNum;
     camTool.width = width;
     [curreVC.view addSubview:camTool];
@@ -100,7 +98,7 @@
 
 - (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex {
     if (buttonIndex == 2) return;
-    if (self.type == CameraToolDefault) {
+    if (self.cameraToolType == CameraToolDefault) {
         UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypePhotoLibrary;
         if ([UIImagePickerController isSourceTypeAvailable:type]){
             if ( buttonIndex == 0 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -108,17 +106,17 @@
             }
             if (type == UIImagePickerControllerSourceTypeCamera) {
                 SKFCamera *homec = [[SKFCamera alloc]init];
-                __weak typeof(self) myself = self;
-                homec.fininshcapture = ^(UIImage *ss) {
-                    if (ss) {
-                        UIImage *newImage = [myself imageWithImage:ss];
-                        if (myself.type == CameraToolDefault) {
-                            if (myself.completeChooseCallback) {
-                                myself.completeChooseCallback(newImage);
+                __weak typeof(self) weakSelf = self;
+                homec.fininshcapture = ^(UIImage *image) {
+                    if (image) {
+                        UIImage *newImage = [weakSelf imageWithImage:image];
+                        if (weakSelf.cameraToolType == CameraToolDefault) {
+                            if (weakSelf.completeChooseCallback) {
+                                weakSelf.completeChooseCallback(newImage);
                             }
-                        } else if (myself.type == CameraToolCustomize) {
-                            if (myself.photosCompleteChooseCallback) {
-                                myself.photosCompleteChooseCallback(@[newImage]);
+                        } else if (weakSelf.cameraToolType == CameraToolCustomize) {
+                            if (weakSelf.photosCompleteChooseCallback) {
+                                weakSelf.photosCompleteChooseCallback(@[newImage]);
                             }
                         }
                     }
@@ -132,7 +130,7 @@
                 [self.vc presentViewController:picker animated:YES completion:nil];
             }
         }
-    } else if (self.type == CameraToolCustomize) {
+    } else if (self.cameraToolType == CameraToolCustomize) {
         if (buttonIndex == 0) {
             [self goCamera];
         } else if (buttonIndex == 1) {
@@ -181,15 +179,15 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    UIImage *image = [info objectForKey:_isEdit?UIImagePickerControllerEditedImage:UIImagePickerControllerOriginalImage];
+    UIImage *image = [info objectForKey:_isEdit? UIImagePickerControllerEditedImage:UIImagePickerControllerOriginalImage];
     if (image) {
         [picker dismissViewControllerAnimated:YES completion:^{
             UIImage *newImage = [self imageWithImage:image];
-            if (self.type == CameraToolDefault) {
+            if (self.cameraToolType == CameraToolDefault) {
                 if (self.completeChooseCallback) {
                     self.completeChooseCallback(newImage);
                 }
-            } else if (self.type == CameraToolCustomize) {
+            } else if (self.cameraToolType == CameraToolCustomize) {
                 if (self.photosCompleteChooseCallback) {
                     self.photosCompleteChooseCallback(@[newImage]);
                 }
@@ -205,12 +203,12 @@
     }];
 }
 
-- (UIImage *)imageWithImage:(UIImage*)image {
+- (UIImage *)imageWithImage:(UIImage *)image {
     float Proportion = image.size.width / image.size.height;
     CGSize newSize = CGSizeMake(self.width, self.width / Proportion);
     if (image.size.width > self.width) {
         UIGraphicsBeginImageContext(newSize);
-        [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+        [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
         image  = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
