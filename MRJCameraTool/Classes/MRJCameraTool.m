@@ -18,8 +18,7 @@
 
 @implementation MRJCameraTool
 
-/// 占用一个像素的主屏幕位置
-/// 确保委托方法的顺利执行
+/// 占用一个像素的主屏幕位置, 确保委托方法的顺利执行
 + (id)cameraToolDefault {
     MRJCameraTool *camTool = [[MRJCameraTool alloc]initWithFrame:CGRectMake(0, 0, 1, 1)];
     camTool.backgroundColor = [UIColor clearColor];

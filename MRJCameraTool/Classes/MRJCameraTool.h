@@ -17,7 +17,8 @@ typedef void (^PhotosCompleteChooseCallback)(NSArray *images);
 @interface MRJCameraTool : UIView
 
 @property (nonatomic, assign) UIImagePickerControllerSourceType sourceType;
-@property (nonatomic, assign) BOOL isEdit;///编辑设置
+///编辑设置
+@property (nonatomic, assign) BOOL isEdit;
 @property (nonatomic, assign) CGFloat width;
 @property (nonatomic, assign) CameraToolType cameraToolType;
 @property (nonatomic, assign) NSInteger maxNum;
