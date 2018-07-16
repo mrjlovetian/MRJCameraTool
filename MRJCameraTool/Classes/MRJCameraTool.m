@@ -166,7 +166,7 @@
 
 #pragma mark - KKAssetPickerController Delegate
 
-- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto {
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray <UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto {
     self.photosCompleteChooseCallback(photos);
 }
 
@@ -178,7 +178,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    UIImage *image = [info objectForKey:_isEdit? UIImagePickerControllerEditedImage:UIImagePickerControllerOriginalImage];
+    UIImage *image = [info objectForKey:_isEdit?UIImagePickerControllerEditedImage:UIImagePickerControllerOriginalImage];
     if (image) {
         [picker dismissViewControllerAnimated:YES completion:^{
             UIImage *newImage = [self imageWithImage:image];
